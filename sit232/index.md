@@ -1,0 +1,8 @@
+# test!
+<script setup>
+import { useData } from 'vitepress'
+import { computed } from 'vue'
+
+const { page } = useData()
+const contributors = computed(() => page.value.contributors)
+</script>

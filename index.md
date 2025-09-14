@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "SIT Notes"
-  text: "by Riley Brown"
-  tagline: My great project tagline
+  text: "Range of notes from Deakin SIT units."
+  tagline: Created and maintained by Riley Brown
   actions:
     - theme: brand
       text: Markdown Examples
