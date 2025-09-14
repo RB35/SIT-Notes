@@ -24,5 +24,6 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/RB35/SIT-Notes' }
     ]
-  }
+  },
+  base: '/SIT-Notes/'
 })
