@@ -37,7 +37,11 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/RB35/SIT-Notes' }
-    ]
+    ],
+
+    editLink: {
+      pattern: 'https://github.com/RB35/SIT-Notes/edit/main/docs/:path'
+    }
   },
   base: '/SIT-Notes/'
 });
