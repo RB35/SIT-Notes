@@ -40,7 +40,7 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: 'https://github.com/RB35/SIT-Notes/edit/main/docs/:path'
+      pattern: 'https://github.com/RB35/SIT-Notes/edit/main/:path'
     }
   },
   base: '/SIT-Notes/'
