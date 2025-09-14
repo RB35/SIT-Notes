@@ -2,7 +2,7 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import ContributorComponent from './contributorComponent.vue'
+import ContributorComponent from './ContributorComponent.vue'
 import './style.css'
 
 export default {
