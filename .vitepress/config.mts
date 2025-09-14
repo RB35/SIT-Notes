@@ -1,47 +1,21 @@
 import { defineConfig } from 'vitepress'
-import { withSidebar } from 'vitepress-sidebar';
 
-
-import Git from 'simple-git'
-
-const git = Git({
-  maxConcurrentProcesses: 200
-})
-
-// taken from vueuse
-async function getContributorsAt(path: string) {
-  try {
-    const list = (
-      await git.raw(['log', '--pretty=format:"%an|%ae"', '--', path])
-    )
-      .split('\n')
-      .map((i) => i.slice(1, -1).split('|') as [string, string])
-    const map: Record<string, { name: string; count: number }> = {}
-
-    list
-      .filter((i) => i[1])
-      .forEach((i) => {
-        if (!map[i[1]]) {
-          map[i[1]] = {
-            name: i[0],
-            count: 0
-          }
-        }
-        map[i[1]].count++
-      })
-
-    return Object.values(map)
-      .sort((a, b) => b.count - a.count)
-      .map((i) => i.name)
-  } catch (e) {
-    console.error(e)
-    return []
-  }
-}
-
+import {
+  GitChangelog,
+  GitChangelogMarkdownSection,
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 // https://vitepress.dev/reference/site-config
-const vitePressOptions = {
+export default defineConfig({
+  vite: {
+    plugins: [
+      GitChangelog({
+        // Fill in your repository URL here
+        repoURL: () => 'https://github.com/RB35/SIT-Notes',
+      }),
+      GitChangelogMarkdownSection(),
+    ],
+  },
   title: "SIT Notes",
   description: "Range of notes from Deakin SIT units.",
   themeConfig: {
@@ -66,13 +40,4 @@ const vitePressOptions = {
     ]
   },
   base: '/SIT-Notes/'
-};
-
-const vitePressSidebarOptions = {
-  // VitePress Sidebar's options here...
-  documentRootPath: '/',
-  collapsed: false,
-  capitalizeFirst: true
-};
-
-export default defineConfig(withSidebar(vitePressOptions, vitePressSidebarOptions));
+});

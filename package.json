@@ -5,10 +5,7 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.12",
-    "vitepress-sidebar": "^1.33.0"
-  },
-  "dependencies": {
-    "simple-git": "^3.28.0"
+    "@nolebase/vitepress-plugin-git-changelog": "^2.18.2",
+    "vitepress": "^2.0.0-alpha.12"
   }
 }
