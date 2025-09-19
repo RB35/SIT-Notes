@@ -22,18 +22,39 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Units', link: '/welcome' }
     ],
+    sidebar: {
+      // This sidebar gets displayed when a user
+      // is on `guide` directory.
+      '/welcome': [
+        {
+          text: 'Units',
+          items: [
+            { text: 'SIT232 - Object Oriented Development', link: '/SIT232/' },
+          ]
+        }
+      ],
 
-    sidebar: [
-      {
-        text: 'SIT232 - Object-Oriented Development',
-        items: [
-          { text: '', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+      '/SIT232/': [
+        {
+          text: 'Design/Concepts',
+          items: [
+            { text: 'Index', link: '/config/' },
+            { text: 'Three', link: '/config/three' },
+            { text: 'Four', link: '/config/four' }
+          ]
+        },
+        {
+          text: 'C#',
+          items: [
+            { text: 'Index', link: '/config/' },
+            { text: 'Three', link: '/config/three' },
+            { text: 'Four', link: '/config/four' }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/RB35/SIT-Notes' }
