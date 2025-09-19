@@ -36,7 +36,7 @@ export default defineConfig({
         }
       ],
 
-      '/SIT232/': [
+      '/sit232/': [
         {
           text: 'Design/Concepts',
           items: [
