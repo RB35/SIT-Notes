@@ -8,11 +8,11 @@ hero:
   tagline: Created and maintained by Riley Brown & maybe you!
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: View Units
+      link: /welcome
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Contributing
+      link: /contributing
 
 features:
   - title: Feature A

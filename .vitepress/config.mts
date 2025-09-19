@@ -38,6 +38,11 @@ export default defineConfig({
 
       '/sit232/': [
         {
+          items: [
+            { text: 'Welcome', link: '/sit232' },
+          ]
+        },
+        {
           text: 'Design/Concepts',
           items: [
             { text: 'Index', link: '/config/' },
@@ -48,7 +53,7 @@ export default defineConfig({
         {
           text: 'C#',
           items: [
-            { text: 'Index', link: '/config/' },
+            { text: 'XML Documentation', link: '/sit232/csharp/xmlDocumentation' },
             { text: 'Three', link: '/config/three' },
             { text: 'Four', link: '/config/four' }
           ]
