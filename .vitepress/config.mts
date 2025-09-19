@@ -31,12 +31,12 @@ export default defineConfig({
         {
           text: 'Units',
           items: [
-            { text: 'SIT232 - Object Oriented Development', link: '/SIT232/' },
+            { text: 'SIT232 - Object Oriented Development', link: '/sit232/' },
           ]
         }
       ],
 
-      '/SIT232/': [
+      '/sit232/': [
         {
           text: 'Design/Concepts',
           items: [
