@@ -5,8 +5,10 @@ import {
   GitChangelogMarkdownSection,
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
+import { withMermaid } from "vitepress-plugin-mermaid";
+
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid(defineConfig({
   vite: {
     plugins: [
       GitChangelog({
@@ -39,7 +41,7 @@ export default defineConfig({
       '/sit232/': [
         {
           items: [
-            { text: 'Welcome', link: '/sit232' },
+            { text: 'SIT232 - Object Oriented Development', link: '/sit232/' },
           ]
         },
         {
@@ -70,4 +72,4 @@ export default defineConfig({
     }
   },
   base: '/SIT-Notes/'
-});
+}));
