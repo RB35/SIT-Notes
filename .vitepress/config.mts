@@ -7,6 +7,27 @@ import {
 
 import { withMermaid } from "vitepress-plugin-mermaid";
 
+import sit232Bar from "../sit232/sidebar"
+
+//---------------------------------------
+//  Sidebar config (Other config below)
+//---------------------------------------
+const sidebarNav = {
+  // This sidebar gets displayed when a user
+  // is on `guide` directory.
+  '/welcome': [
+    {
+      text: 'Units',
+      items: [
+        { text: 'SIT232 - Object Oriented Development', link: '/sit232/' },
+      ]
+    }
+  ],
+
+  //SIT232 sidebar
+  '/sit232/': sit232Bar
+};
+
 // https://vitepress.dev/reference/site-config
 export default withMermaid(defineConfig({
   vite: {
@@ -26,42 +47,7 @@ export default withMermaid(defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Units', link: '/welcome' }
     ],
-    sidebar: {
-      // This sidebar gets displayed when a user
-      // is on `guide` directory.
-      '/welcome': [
-        {
-          text: 'Units',
-          items: [
-            { text: 'SIT232 - Object Oriented Development', link: '/sit232/' },
-          ]
-        }
-      ],
-
-      '/sit232/': [
-        {
-          items: [
-            { text: 'SIT232 - Object Oriented Development', link: '/sit232/' },
-          ]
-        },
-        {
-          text: 'Design/Concepts',
-          items: [
-            { text: 'Index', link: '/config/' },
-            { text: 'Three', link: '/config/three' },
-            { text: 'Four', link: '/config/four' }
-          ]
-        },
-        {
-          text: 'C#',
-          items: [
-            { text: 'XML Documentation', link: '/sit232/csharp/xmlDocumentation' },
-            { text: 'Three', link: '/config/three' },
-            { text: 'Four', link: '/config/four' }
-          ]
-        }
-      ]
-    },
+    sidebar: sidebarNav,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/RB35/SIT-Notes' }
