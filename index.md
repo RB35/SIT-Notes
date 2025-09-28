@@ -14,12 +14,8 @@ hero:
       text: Contributing
       link: /contributing
 
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+# features:
+#   - title: SIT232 - Object Oriented Development
+#     details: The first and currently only unit on this site!
 ---
 
