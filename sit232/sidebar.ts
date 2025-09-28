@@ -14,7 +14,8 @@ const sidebar = [
     {
         text: 'C#',
         items: [
-            { text: 'XML Documentation', link: '/sit232/csharp/xml_documentation' }
+            { text: 'XML Documentation', link: '/sit232/csharp/xml_documentation' },
+            { text: 'Class Syntax Cheatsheet', link: '/sit232/csharp/class_syntax_cheatsheet' }
         ]
     }
 ];

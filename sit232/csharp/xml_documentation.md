@@ -98,7 +98,7 @@ public class Person
     }
 }
 ```
-## Where else XML documentation is used
+## Where else is XML documentation is used
 Apart from just being used in your IDE like we covered in this page XML documentation is also used in many other useful ways.
 
 All XML documentation can be copied by the compiler into a separate documentation file during compilation. This is helpful when compiling libraries to .dll files (or similar). This is because when compiled all comments will be lost and the code will no longer be easily readable, so the documentation file can be distributed along side the .dll allowing users of the library to still get helpful documentation of the compiled library they are using.
