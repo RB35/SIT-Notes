@@ -60,5 +60,6 @@ export default withMermaid(defineConfig({
       pattern: 'https://github.com/RB35/SIT-Notes/edit/main/:path'
     }
   },
-  base: '/SIT-Notes/'
+  base: '/SIT-Notes/',
+  srcExclude: ['**/*.vue']
 }));

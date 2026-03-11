@@ -14,5 +14,9 @@
     "vitepress-plugin-mermaid": {
       "vitepress": "^2.0.0-alpha.12"
     }
+  },
+  "dependencies": {
+    "konva": "^10.2.0",
+    "vue-konva": "^3.4.0"
   }
 }
