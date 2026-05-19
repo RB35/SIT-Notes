@@ -8,9 +8,9 @@ const sidebar = [
   {
     text: "Sorting Algorithms",
     items: [
-      { text: "Bubble Sort", link: "/sit221/bubbleSort" },
-      { text: "Selection Sort", link: "/sit221/selectionSort" },
-      { text: "Insertion Sort", link: "/sit221/insertionSort" },
+      { text: "Bubble Sort", link: "/sit221/sorting/bubbleSort" },
+      { text: "Selection Sort", link: "/sit221/sorting/selectionSort" },
+      { text: "Insertion Sort", link: "/sit221/sorting/insertionSort" },
     ],
   },
 ];
