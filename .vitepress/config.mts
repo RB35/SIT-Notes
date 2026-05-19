@@ -9,6 +9,7 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 
 import sit232Bar from "../sit232/sidebar"
 import sit221Bar from "../sit221/sidebar"
+import sit331Bar from "../sit331/sidebar"
 
 //---------------------------------------
 //  Sidebar config (Other config below)
@@ -22,13 +23,15 @@ const sidebarNav = {
       items: [
         { text: 'SIT232 - Object Oriented Development', link: '/sit232/' },
         { text: 'SIT221 - Data Structures And Algorithms', link: '/sit221/' },
+        { text: 'SIT221 - Full Stack Development: Secure Backend Services', link: '/sit331/' },
       ]
     }
   ],
 
   //SIT232 sidebar
   '/sit232/': sit232Bar,
-  '/sit221/' : sit221Bar
+  '/sit221/' : sit221Bar,
+  '/sit331/' : sit331Bar
 };
 
 // https://vitepress.dev/reference/site-config
