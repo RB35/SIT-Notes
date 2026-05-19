@@ -75,8 +75,7 @@
             v-for="(element, index) in data" :key="element.id" :config="{
               x: (config.element.width + config.element.xSpacing) * index,
               y: config.element.y,
-              id: `el_${element.id}`,
-              draggable: true
+              id: `el_${element.id}`
             }">
             <v-rect :config="{
               x: 0,
