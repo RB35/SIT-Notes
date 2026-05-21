@@ -139,3 +139,5 @@ builder.Services.AddSwaggerGen(options =>
 
 Going back to Swagger we can now see the authorization policies!
 ![Swagger with authorization policies](./assets/policyInformation.png)
+
+Now we have greatly improved the documentation of authentication and authorization within Swagger! Hopefully this also gives you an idea of how you can further customize your documentation using more advanced features such as filters.
