@@ -11,7 +11,8 @@ const sidebar = [
   {
     text: "Documentation",
     items: [
-      { text: "Schema documentation", link: "/sit331/documentingClassesForSwagger" }
+      { text: "Schema documentation", link: "/sit331/documentingClassesForSwagger" },
+      { text: "Authentication", link: "/sit331/authenticationWithSwagger" },
     ],
   },
 ];
