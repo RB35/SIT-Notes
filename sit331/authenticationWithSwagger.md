@@ -19,7 +19,7 @@ Looking back at `builder.Services.AddSwaggerGen();` in `Program.cs` we can see t
 ```C#
 builder.Services.AddSwaggerGen(options =>
 {
-    options.AddSecurityDefinition("basic", new OpenApiSecurityScheme
+    options.AddSecurityDefinition("basicAuth", new OpenApiSecurityScheme
     {
         Type = SecuritySchemeType.Http,
         Scheme = "basic",
@@ -30,7 +30,7 @@ builder.Services.AddSwaggerGen(options =>
 });
 ```
 
-The code above adds a new security scheme.
+The code above adds a new security scheme with the name `basicAuth` (this name can be anything, as long as it is informative), the type is a HTTP authentication scheme (meaning a scheme that makes use of the `Authorization` header), the scheme is `basic` as we are using basic authentication and a description that gives information about this scheme.
 
 If you add this to your code when you go to swagger you should see a Authorize button at the top of the page.
 
