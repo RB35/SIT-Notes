@@ -1,3 +1,5 @@
-# SIT221 - Data Structures And Algorithms
+# SIT232 - Object Oriented Development
 
-Coming soon!
+Welcome!
+
+Choose a page from the sidebar to get started!
