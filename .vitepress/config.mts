@@ -45,6 +45,9 @@ export default withMermaid(defineConfig({
       GitChangelogMarkdownSection(),
     ],
   },
+  markdown: {
+    math: true
+  },
   title: "SIT Notes",
   description: "Range of notes from Deakin SIT units.",
   themeConfig: {

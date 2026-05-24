@@ -6,6 +6,7 @@
   },
   "devDependencies": {
     "@nolebase/vitepress-plugin-git-changelog": "^2.18.2",
+    "markdown-it-mathjax3": "^4.3.2",
     "mermaid": "^11.12.0",
     "vitepress": "^2.0.0-alpha.12",
     "vitepress-plugin-mermaid": "^2.0.17"
@@ -16,6 +17,7 @@
     }
   },
   "dependencies": {
+    "@miletorix/vitepress-gallery": "^1.0.1",
     "konva": "^10.2.0",
     "vue-konva": "^3.4.0"
   }

@@ -4,6 +4,9 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 
+import { Gallery } from '@miletorix/vitepress-gallery';
+import '@miletorix/vitepress-gallery/style.css';
+
 import {
   NolebaseGitChangelogPlugin
 } from '@nolebase/vitepress-plugin-git-changelog/client'
@@ -18,6 +21,7 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    app.use(NolebaseGitChangelogPlugin)
+    app.use(NolebaseGitChangelogPlugin);
+    app.component('Gallery', Gallery);
   }
 } satisfies Theme
