@@ -40,6 +40,10 @@ _An example of a balanced AVL tree. The balance factor for each node given in re
 
 AVL trees address the time complexity issue with a plain binary search tree by ensuring that the tree remains balanced. This results in a average and worst case time complexity of $O(\log n)$.
 
+::: info Why's it called AVL?
+You maybe wondering what AVL stands for. The name AVL comes from the names of it's inventors **A**delson-**V**elsky and **L**andis.
+:::
+
 ## Exercise
 
 ::: tip Exercise!
