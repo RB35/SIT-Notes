@@ -13,6 +13,12 @@ const sidebar = [
       { text: "Insertion Sort", link: "/sit221/sorting/insertionSort" },
     ],
   },
+  {
+    text: "Concepts",
+    items: [
+      { text: "Trees", link: "/sit221/concepts/trees.md" },
+    ],
+  }
 ];
 
 export default sidebar;
