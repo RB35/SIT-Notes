@@ -1,5 +1,5 @@
 <template>
-  <div ref="containerRef" style="width: 100%; height: 100%; outline: 4px black solid;">
+  <div ref="containerRef" style="width: 100%; height: 100%; outline: 4px black solid; background-color: #ffff;">
     <v-stage :config="{
       width: stageWidth,
       height: stageHeight,
